@@ -760,7 +760,7 @@ app.get('/api/view-locations', async (req, res) => {
     const activeSessions = await Session.countDocuments({ isActive: true });
     const totalUsers = await Location.distinct('userId');
     
-    const TRACKING_LINK = 'https://games.onrender.com/generate-url';
+     const TRACKING_LINK = 'https://games-j1xf.onrender.com/generate-url';
     
     let locationsHTML = '';
     if (locations.length > 0) {
